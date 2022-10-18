@@ -12,6 +12,9 @@
         <module>Customer</module>
         <module>Fraud</module>
         <module>Eureka-server</module>
+        <module>Notification</module>
+        <module>Apigw</module>
+        <module>Amqp</module>
     </modules>
 
 
