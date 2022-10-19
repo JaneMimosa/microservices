@@ -6,15 +6,13 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.context.annotation.PropertySources;
 
-@SpringBootApplication (
+@SpringBootApplication(
         scanBasePackages = {
-                "com.microservices.notification",
-                "com.microservices.amqp",
+                "com.microservices.Notification",
+                "com.microservices.Amqp",
         }
 )
-@PropertySources({
-        @PropertySource("classpath:clients-${spring.profiles.active}.properties")
-})
+
 public class NotificationApplication {
     public static void main(String[] args) {
         SpringApplication.run(NotificationApplication.class, args);

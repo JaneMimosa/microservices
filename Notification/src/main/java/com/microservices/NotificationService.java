@@ -1,5 +1,6 @@
 package com.microservices;
 
+import com.microservices.notification.NotificationRequest;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -15,7 +16,6 @@ public class NotificationService {
         notificationRepository.save(
                 Notification.builder()
                         .toCustomerId(notificationRequest.toCustomerId())
-                        .toCustomerEmail(notificationRequest.toCustomerEmail())
                         .sender("Jane")
                         .message(notificationRequest.message())
                         .sentAt(LocalDateTime.now())
