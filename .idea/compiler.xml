@@ -6,9 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Apigw" />
+        <module name="Amqp" />
         <module name="Customer" />
-        <module name="Eureka-server" />
         <module name="Fraud" />
+        <module name="Clients" />
+        <module name="Eureka-server" />
+        <module name="Notification" />
       </profile>
     </annotationProcessing>
   </component>
